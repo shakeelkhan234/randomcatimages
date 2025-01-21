@@ -1,0 +1,53 @@
+/* Center the card on the screen */
+.card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    margin: 0;
+  }
+  
+  /* Basic card styling */
+  .card {
+    position: relative;
+    width: 280px;
+    height: 380px;
+    background-color: #0416b8;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    opacity: 0;
+    transform: scale(0.8);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+  }
+  
+  /* Heading styling */
+  .card-heading {
+    font-size: 20px;
+    color: #0741e2;
+    margin-top: 20px;
+  }
+  
+  /* Animation effect for the card */
+  .card-animate {
+    opacity: 1;
+    transform: scale(1);
+  }
+  .card-image {
+    position: absolute;
+    width: 280px;
+    height: 400px;
+    object-fit: cover;
+    background-color: #fff;
+    margin-top: 20px;
+  }
+
+  .loadbtn {
+    width: 100px;
+    height: 30px;
+    background-color: #0741e2;
+  }
